@@ -59,7 +59,7 @@ router.put('/:id', async (req, res) => {
     });
 
     if (!tagsData) {
-      res.status(404).json({ message: 'No tag found with that id'})
+      res.status(404).json({ message: 'No tag found with that id' })
     }
 
     res.status(200).json(tagsData)
@@ -70,6 +70,28 @@ router.put('/:id', async (req, res) => {
 
 router.delete('/:id', async (req, res) => {
   // delete on tag by its `id` value
+  try {
+    await ProductTag.destroy({
+      where: {
+        tag_id: req.params.id,
+      }
+    })
+
+    const tagsData = await Tag.destroy({
+      where: {
+        id: req.params.id
+      }
+    });
+
+    if (!tagsData) {
+      res.status(404).json({ message: 'No tag found with that id' })
+    }
+
+    res.status(200).json(tagsData)
+  } catch (err) {
+    console.log(err)
+    res.status(500).json(err)
+  }
 });
 
 module.exports = router;
