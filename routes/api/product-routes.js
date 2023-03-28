@@ -117,8 +117,7 @@ router.delete('/:id', async (req, res) => {
     const productData = await Product.destroy({
       where: {
         id: req.params.id
-      },
-      include: [{ model: ProductTag }, { model: Tag}]
+      }
     });
 
     if (!productData) {
@@ -127,6 +126,7 @@ router.delete('/:id', async (req, res) => {
 
     res.status(200).json(productData);
   } catch (err) {
+    console.log(err)
     res.status(500).json(err)
   }
 });
