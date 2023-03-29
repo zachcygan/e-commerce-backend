@@ -6,7 +6,7 @@ The purpose of this project was to understand how a database woulds together wit
 
 ## Installation
 
-The webpage is available at https://github.com/zachcygan/e-commerce-backend. Be sure to install any dependencies by typing in "npm i" in the console. This will install sequelize, dotenv, express, and mysql2. 
+The github repository is available at https://github.com/zachcygan/e-commerce-backend. Be sure to install any dependencies by typing in "npm i" in the console. This will install sequelize, dotenv, express, and mysql2. 
 
 ## Dependencies Used
     - sequelize
@@ -16,7 +16,7 @@ The webpage is available at https://github.com/zachcygan/e-commerce-backend. Be 
 
 ## Instructions
 
-To begin, type "npm i" in your console to ensure any dependencies are installed. Then ensure that a .env file is created with the user root and your password. Then select the database with mysql and seed the test data by typing "node seeds/index.js" in your console from the server.js file. You may then start the server by typing "npm start" in the console. Use Insomnia or any similar program to perform different requests to the routes on the database. 
+To begin, type "npm i" in your console to ensure any dependencies are installed. Ensure that a .env file is created with the user root and your password. Then select the database with mysql and seed the test data by typing "node seeds/index.js" in your console from the server.js file. You may then start the server by typing "npm start" in the console. Use Insomnia or any similar program to perform different requests to the routes on the database. 
 
 ## Video Demonstration
 
