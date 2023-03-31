@@ -20,7 +20,7 @@ To begin, type "npm i" in your console to ensure any dependencies are installed.
 
 ## Video Demonstration
 
-Link to video demo: 
+Link to video demo: https://youtu.be/NYfBzKldfTY
 
 ## Screenshots
 
